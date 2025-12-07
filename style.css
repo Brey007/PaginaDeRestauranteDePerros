@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    height:100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/mesa.png);
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header h1 {
+    font-family: "Luckiest Guy", cursive;
+    color: #fff;
+    font-size: 6rem;
+    letter-spacing: 6px;
+    margin-left: 10rem;
+    margin-top: 14rem;
+    text-align: left;
+}
+
+header p {
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 10rem;
+    margin-top: 1rem;
+}
+header img.animated {
+    position: absolute;
+    right: -300px;
+    top: 50%;
+    transform: translateY(-45%);
+    width: 50rem;
+    height: 40rem;
+    pointer-events: none;
+    z-index: 5;
+    animation: entrar 1.8s ease-out forwards;
+}
+
+@keyframes entrar {
+    0% {
+        right: -300px;
+        opacity: 0;
+    }
+    100% {
+        right: 10px;
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #fffff8;
+    overflow-x: hidden;
+}
