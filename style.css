@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BBH+Hegarty&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
     margin: 0;
@@ -22,27 +24,42 @@ header {
 }
 
 header h1 {
+    position: relative;
     margin: 0;
+    font-family: "BBH Hegarty", sans-serif;
+    letter-spacing: 5px;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #080325;
+    padding: 1rem 3rem;
+    border: 4px solid black;
+    border-radius: 20px;
+    background-color: #b89d7d8e;
+    z-index: 5;
+    pointer-events: none;
 }
 
 header p {
-    margin: 1rem 0 0 0;
+    margin: 0 0 0 1rem;
+    padding-top: 3rem;
+    pointer-events: none;
 }
+
 header img.animated {
     position: absolute;
-    right: -300px;
-    top: 50%;
-    transform: translateY(-45%);
-    width: 50rem;
-    height: 40rem;
+    right: -400px;
+    bottom: -200px;
+    width: 65rem;
+    height: 55rem;
     pointer-events: none;
-    z-index: 5;
-    animation: entrar 1.8s ease-out forwards;
+    z-index: 2;
+    animation: entrar 1.2s ease-out forwards;
 }
 
 .contenido {
     margin-left: 9rem;
-    margin-top: 14rem;
+    margin-top: 5rem;
+    font-size: 2rem;
 }
 
 .botones {
@@ -52,13 +69,26 @@ header img.animated {
     gap: 1.5rem;
 }
 
+.btn {
+    font-family: "BBH Hegarty", sans-serif;
+    text-decoration: none;
+    color: black;
+    background-color: #f2eae1ae;
+    padding: 1rem 3rem;
+    border: 4px solid black;
+    border-radius: 21px;
+    font-size: 1.4rem;
+    width: fit-content;
+    transition: all 0.25% ease;
+}
+
 @keyframes entrar {
     0% {
-        right: -300px;
+        right: -500px;
         opacity: 0;
     }
     100% {
-        right: 10px;
+        right: -50px;
         opacity: 1;
     }
 }
